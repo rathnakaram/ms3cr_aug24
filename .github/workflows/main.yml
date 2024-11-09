@@ -9,7 +9,7 @@ on:
       - main
       - sdk-preview
     paths:
-      - jobs/autompg_pipeline/**
+      - jobs/ads_pipeline/**
       - .github/workflows/cli-jobs-pipelines-auto-mpg-pipeline.yml
       - run-pipeline-jobs.sh
       - setup.sh
@@ -28,4 +28,4 @@ jobs:
       continue-on-error: true
     - name: run job
       run: bash -x ../../run-job.sh pipeline.yml
-      working-directory: jobs/autompg_pipeline
+      working-directory: jobs/ads_pipeline
